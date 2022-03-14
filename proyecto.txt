@@ -1,33 +1,33 @@
 
 1º Creación del proyecto
-renegade@MiPC:~/proyectos/Angular2022/clientes$ ng new clientes
+renegade@MiPC:~/proyectos/Angular2022-Clientes$ ng new clientes
 
 
 2º Inicialización Git para el proyecto
-renegade@MiPC:~/proyectos/Angular2022/clientes$ git init
-Reinicializado el repositorio Git existente en /home/renegade/proyectos/Angular2022/clientes/.git/
+renegade@MiPC:~/proyectos/Angular2022-Clientes$ git init
+Reinicializado el repositorio Git existente en /home/renegade/proyectos/Angular2022-Clientes/.git/
 
 
 3º Añadimos el remoto para subir a GitHub
-renegade@MiPC:~/proyectos/Angular2022/clientes$ git remote add clientes https://github.com/RenegadeAsturias/Angular2022-Clientes.git
+renegade@MiPC:~/proyectos/Angular2022-Clientes$ git remote add clientes https://github.com/RenegadeAsturias/Angular2022-Clientes.git
 
 
 4º Actualizar GitHub
 
-renegade@MiPC:~/proyectos/Angular2022/clientes$ git add .
+renegade@MiPC:~/proyectos/Angular2022-Clientes$ git add .
 renegade@MiPC:~/proyectos/Angular2022/clientes$ git commit -m "Proyecto clientes"
 [master 31ba505] Proyecto clientes
  1 file changed, 14 insertions(+)
  create mode 100644 proyecto.txt
-renegade@MiPC:~/proyectos/Angular2022/clientes$ git push clientes master
+renegade@MiPC:~/proyectos/Angular2022-Clientes$ git push clientes master
 
 
 5º Abrir proyecto en el navegador:
 
-renegade@MiPC:~/proyectos/Angular2022/clientes$ ng serve -o
+renegade@MiPC:~/proyectos/Angular2022-Clientes$ ng serve -o
 
 
-6º Configuar en: /home/renegade/proyectos/Angular2022/clientes/src/app/app.module.ts
+6º Configuar en: /home/renegade/proyectos/Angular2022-Clientes/src/app/app.module.ts
 el módulo para utilizar formularios:
 
 import { FormsModule } from '@angular/forms';
@@ -41,7 +41,7 @@ import { FormsModule } from '@angular/forms';
 
 
 7º Creamos manualmente el fichero: 
-/home/renegade/proyectos/Angular2022/clientes/src/app/cliente.model.ts
+/home/renegade/proyectos/Angular2022-Clientes/src/app/cliente.model.ts
 
 para implementar la clase Cliente:
 
@@ -60,6 +60,9 @@ export class Cliente {
 }
 
 
+8º Creamos manualmente el Componente : coches
 
-
+9º Crear un Componte con CLI (Command Line Interface)
+renegade@MiPC:~/proyectos/Angular2022-Clientes$ ng generate component coche
+renegade@MiPC:~/proyectos/Angular2022-Clientes$ ng g c coche (Abreviado)
 
