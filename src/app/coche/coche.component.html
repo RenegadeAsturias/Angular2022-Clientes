@@ -1,2 +1,15 @@
 
 <p>Componente: {{titleCoche}}</p>
+
+<br/>
+<p>Color coche: {{color.value}}</p>
+
+Introduce el color: <input type="text" #color >&nbsp;&nbsp;<input type="button" value="Haz clic!" (click)="actualizaColor(color.value)" />
+
+<br/>
+<p>Marca coche: {{marca.value}}</p>
+
+Introduce la marca: <input type="text" #marca (keyup)="0"> 
+
+<br/><br/>
+

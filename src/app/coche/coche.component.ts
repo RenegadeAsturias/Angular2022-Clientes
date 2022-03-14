@@ -14,4 +14,8 @@ export class CocheComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  actualizaColor(value:string){
+    console.log("Actualiza color = " + value);
+  }
+
 }
